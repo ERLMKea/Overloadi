@@ -18,6 +18,11 @@ public class MainArrayList {
         System.out.println(lst);
     }
 
+    public static <T> void out22(List<T> lst) {
+        System.out.println("I am List size=" + lst.size());
+        System.out.println(lst);
+    }
+
     public static void main(String[] args) {
         LinkedList<String> lst = new LinkedList<>();
         lst.add("kurt");
