@@ -1,8 +1,7 @@
 import java.util.ArrayList;
 import java.util.List;
 
-public class Main {
-
+public class MainStudent {
     public static void out(String str) {
         System.out.println(str);
     }
@@ -40,16 +39,27 @@ public class Main {
     }
 
     public static void main(String[] args) {
-        out('a');
-        out('b');
-        out('1');
-        char c = (char)97;
-        out('ö');
-        out("" + c);
+        out("just hej");
+        out(3>4);
+        out(4.5);
+        ArrayList<String> lst = new ArrayList<>();
+        lst.add("kurt");
+        lst.add("Anne");
+        out(lst);
+        ArrayList<Student> lststud = new ArrayList<>();
+        out(lststud);
 
-        
+        Student std = new Student();
+        std.setAge(25);
+        std.setName("Kurt");
+        out(std);
+
+
+
+
 
     }
+
 
 
 }
