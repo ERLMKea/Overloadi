@@ -27,7 +27,7 @@ public class Main {
         System.out.println(lst);
     }
 
-    public static void out2(ArrayList<Object> lst) {
+    public static void out(ArrayList<? extends Object> lst) {
         System.out.println(lst);
     }
 
@@ -46,7 +46,7 @@ public class Main {
         System.out.println(cls);
     }
 
-    public static <T> void out(T content) {
+    public static <T> void out223(T content) {
         System.out.println("Called with <T>");
         System.out.println(content);
     }
@@ -60,6 +60,11 @@ public class Main {
     }
 
     public static void main(String[] args) {
+        ArrayList<String> lst = new ArrayList<>();
+        lst.add("hej  xxx");
+        out(lst);
+
+
         Student std = new Student();
         std.setAge(23);
         std.setName("kurt");
@@ -68,13 +73,12 @@ public class Main {
         var supcls = cls.getClass();
         out(supcls);
 
-        ArrayList<String> lst = new ArrayList<>();
+        ArrayList<String> lst2 = new ArrayList<>();
         lst.add("hej");
         out(lst);
 
         //System.out.println("hej", "are you", "home");
         out("abc", "def", "kurt");
     }
-
-
 }
+

@@ -55,9 +55,6 @@ public class MainStudent {
         out(std);
 
 
-
-
-
     }
 
 
