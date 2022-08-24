@@ -1,0 +1,22 @@
+const out = function(p1) { console.log(p1) };
+undefined
+out(5);
+VM505:1 5
+undefined
+out("hej");
+VM505:1 hej
+undefined
+const out2 = function(p1,p2) { p2(p1); };
+undefined
+out2(5, out);
+VM505:1 5
+undefined
+out2(4+5, out);
+VM505:1 9
+undefined
+out2(4,5);
+VM672:1 Uncaught TypeError: p2 is not a function
+    at out2 (<anonymous>:1:32)
+    at <anonymous>:1:1
+out2 @ VM672:1
+(anonymous) @ VM786:1
