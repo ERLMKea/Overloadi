@@ -31,7 +31,7 @@ public class Main {
         System.out.println(lst);
     }
 
-    public static <T> void out(List<T> lst) {
+    public static <T> void out22(List<T> lst) {
         System.out.println("I am List size=" + lst.size());
         System.out.println(lst);
     }
@@ -46,6 +46,19 @@ public class Main {
         System.out.println(cls);
     }
 
+    public static <T> void out(T content) {
+        System.out.println("Called with <T>");
+        System.out.println(content);
+    }
+
+    public static void out(String ...str) {
+        String[] arr = str;
+        for (int i = 0; i<arr.length; i++) {
+            String s = arr[i];
+            System.out.println(s);
+        }
+    }
+
     public static void main(String[] args) {
         Student std = new Student();
         std.setAge(23);
@@ -55,7 +68,12 @@ public class Main {
         var supcls = cls.getClass();
         out(supcls);
 
+        ArrayList<String> lst = new ArrayList<>();
+        lst.add("hej");
+        out(lst);
 
+        //System.out.println("hej", "are you", "home");
+        out("abc", "def", "kurt");
     }
 
 
