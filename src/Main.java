@@ -79,6 +79,11 @@ public class Main {
 
         //System.out.println("hej", "are you", "home");
         out("abc", "def", "kurt");
+
+        String firstname = "erik";
+        String lastname = "moller";
+        System.out.printf("First Name: %s\nLast Name: %s \n",firstname, lastname);
+
     }
 }
 
