@@ -1,3 +1,6 @@
+import java.util.ArrayList;
+import java.util.List;
+
 public class Main {
 
     public static void out(String str) {
@@ -13,16 +16,50 @@ public class Main {
         System.out.println("I am Integer =" + ii);
     }
 
+    public static void out(boolean b) {
+        System.out.println(b);
+    }
+    public static void out(double d) {
+        System.out.println(d);
+    }
+
+    public static void out23(List<String> lst) {
+        System.out.println(lst);
+    }
+
+    public static void out2(ArrayList<Object> lst) {
+        System.out.println(lst);
+    }
+
+    public static <T> void out(List<T> lst) {
+        System.out.println(lst);
+    }
+
+    public static void out(Object std) {
+        System.out.println(std);
+    }
 
     public static void main(String[] args) {
         out("just hej");
-        out(5);
-        Integer i = 6;
-        out(i);
-        out(Integer.parseInt("22"));
-        int i1 = Integer.parseInt("22");
-        var i2 = Integer.valueOf("122");
-        out(i2);
+        out(3>4);
+        out(4.5);
+        ArrayList<String> lst = new ArrayList<>();
+        lst.add("kurt");
+        lst.add("Anne");
+        out(lst);
+        ArrayList<Student> lststud = new ArrayList<>();
+        out(lststud);
+
+        Student std = new Student();
+        std.setAge(25);
+        std.setName("Kurt");
+        out(std);
+
+        
+
+
 
     }
+
+
 }
